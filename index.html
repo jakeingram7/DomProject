@@ -1,0 +1,63 @@
+<!-- //the whole purpose of this is an app for contractors to keep track of their clients and when jobs are supposed to be finished// -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contractor List</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body class="view">
+    <br>
+    <h1 class="open-head">Welcome!</h1>
+
+    <p class="desc">Enter Your Jobs & Times Below!</p>
+
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="new-start-date">Start Date</label>
+                            <input type="date" class="form-control" id="new-start-date">
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="new-end-date">End Date</label>
+                            <input type="date" class="form-control" id="new-end-date">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="new-job">Job Name</label>
+                            <input type="text" class="form-control" id="new-job" placeholder="Job Name">
+                        </div>
+                    </div>
+                </div>
+                <button id="add" class="btn btn-primary from-control">Create</button>
+            </div>
+        </div>
+    </div>
+
+    <table id="list" class="table table-dark table-striped">
+        <tr>
+            <th>Job Name</th>
+            <th>Date Created</th>
+            <th>Start Date</th>
+            <th>Due Date</th>
+            <th>Actions</th>
+        </tr>
+    </table>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
